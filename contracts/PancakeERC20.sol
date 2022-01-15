@@ -23,7 +23,7 @@ contract PancakeERC20 is IPancakeERC20 {
     constructor() public {
         uint chainId;
         assembly {
-            chainId := chainid
+            //chainId := chainid
         }
         DOMAIN_SEPARATOR = keccak256(
             abi.encode(
